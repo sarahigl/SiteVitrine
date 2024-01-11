@@ -1,0 +1,372 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;800&display=swap');
+
+/* BASE */
+:root {
+    --text-color: black;
+    --second-font:"Inter", bold;
+    --body-font:"Inter", light;
+    --accent-font:"Inter", medium;
+    --mixed-font:"Inter", mixed;
+}
+/* BODY */
+body{
+    color:var(--text-color);
+}
+
+/* BAR PROGRESS  */
+.header-bar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+/* progress container*/
+.progress-container {
+    width: 100%;
+    height: 18px;
+    background: #ffffff;
+}
+
+/* progress bar (scroll indicator) */
+.progress-bar {
+    height: 18px;
+    background: #FFD800;
+    width: 0%;
+}
+
+/* NAVIGATION HEADER */
+/* CSS HEADER */
+.header{
+    width: 100%;
+    min-width: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.nav-logo{
+    width: 250px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+/* CSS  ACCUEIL */
+img{
+    max-width: 100%; 
+    height: auto;
+}
+.container-accueil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    font-family: var(--body-font);
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h2{
+    margin: 0 10px;
+    font-size: 54px;
+}
+.col-1 .h3-1{
+    font-weight:400;
+}
+.col-1 .h3-2{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+    cursor: pointer;
+}
+.col-1 h4{
+    font-size: 16px;
+}
+.col-1::after{
+    content: "";
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(#ffd900,#FFF8D5);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .signal{
+    width: 90%;
+}
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#ffd900,#FFF8D5);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    margin-left: auto;/* for the right side*/
+}
+
+/* FLECHE  */
+.divArrow{
+    display: flex;
+    justify-content: flex-end;
+}
+#arrow{
+    cursor: pointer;
+    opacity: 1;
+    position: fixed;
+    bottom: 0;
+    font-size: 70px;
+}
+
+/* SOUS TITRE IMAGE DE L'ACCUEIL */
+#titre{
+    margin: 20px 200px 100px 200px;
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* CSS SLIDE APPLICATION */
+.phoneSlide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#image{
+    align-self: center;
+}
+#image-title{
+    padding-top: 2px;
+    text-align: center;
+    align-self: center;
+    font-family: var(--second-font);
+    font-weight: 700;
+    margin-bottom: 150px;
+    font-size: 25px;
+}
+
+/* BOUTON SLIDE */
+#precedent,
+#suivant {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+    position: absolute;
+    font-size: 70px;
+    color: black;
+    padding: 10px;
+    margin-bottom: 250px;
+}
+#precedent {
+    left: 20rem;
+}
+#suivant {
+    right: 20rem;
+}
+#image-title{
+    margin-top: 20px;
+}
+
+/* HISTOIRE APP PARAGRAPHE  */
+
+.texte2{
+    text-align: center;
+    margin: 40px;
+    font-family: var(--accent-font);
+    /* font-size: 32px; */
+    font-weight: 300;
+}
+.secondTitre{
+    font-family: var(--second-font);
+    margin-bottom: 70px;
+    background-color: #fff8d5;
+    line-height: 15px;
+}
+.secondTitre:hover{
+    color: #FFD800;
+}
+.paragraphe, .paragraphe2{
+    line-height:25px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+.paragraphe2{
+    margin-bottom: 150px;
+}
+
+/* AJOUT DÉCOR PARAGRAPHE */
+
+.highlighted-text{
+    background-color: #fff8d5;
+}
+.highlighted-text2{
+    background-color: #fff8d5;
+    width: 100%;
+}
+
+/* FOOTER  */
+footer{
+    background-color: #fff8d551;
+}
+.container-basPage{
+    display: flex;
+    margin-left: 250px;
+}
+.imgFavicon{
+    width: 170px;
+    margin-top: 60px;
+    margin-right: 20px;
+}
+.application{
+    margin-top: 90px;
+    margin-left: 490px;
+    text-align: center;
+}
+.h2-footer .h3-footer{
+    margin: 0;
+}
+.h2-footer{
+    font-family: var(--mixed-font);
+    font-weight: 500;
+    font-size: 40px;
+}
+.h3-footer{
+    font-family: var(--body-font);
+    font-weight: 100;
+    font-size: small;
+}
+button{
+    background-color: #A6F1AD;
+    width: 180px;
+    height: 50px;
+    margin-top: 30px;
+    padding: 0 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    font-family: var(--second-font);
+    font-weight: 500;
+}
+/* 2ND LIGNE FOOTER  */
+.footerBas{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    background-color: #fff8d5;
+}
+.catchPhrase{
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.infoSite{
+    font-family: var(--body-font);
+    font-size: 13px;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 767px){
+    .header-bar{
+        display: none;
+    }
+    .header{
+        padding-left: 0%;
+    }
+    .nav-logo{
+        width: 150px;
+        margin: 30px 0;
+    }
+    .col-1 h2{
+        font-size: 34px;
+        margin-top: 10px;
+    }
+    .container-accueil{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .color-box{
+        height: 100%;
+        width: 50%;
+    }
+    .divArrow{
+        display: none;
+    }
+    #titre{
+        margin: 50px 10px; /* Ajustement de la marge pour les appareils mobiles */
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .titre-liste{
+        margin: 0px 0px;
+        margin-top: 50px;
+    }
+    .container-1{
+        margin-top: 10px;
+    }
+    #precedent,
+    #suivant {
+        font-size: 30px;
+        padding: 0px;
+    }
+    #precedent {
+        left: 22rem;
+    }
+    #suivant {
+        right: 22rem;
+    }
+    #image-title{
+        padding-top: 0;
+        font-weight: 700;
+        margin-bottom: 150px;
+        font-size: 20px;
+    }
+    .texte2{
+        margin: 10 0px;
+    }
+    .paragraphe, .paragraphe2{
+        font-size: 12px;
+        font-weight: 500;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .container-basPage{
+        margin-left: 0px;
+        flex-direction: column;
+        /* margin-top: 20px; */
+    }
+    .imgFavicon{
+        width: 120px;
+        align-self: center;
+    }
+    .application{
+        margin-top: 9px;
+        margin-left: 0px; 
+        /* text-align: center;*/
+    }
+    /* .h2-footer .h3-footer{
+        margin: 0;
+    } */
+    .h2-footer{
+        font-weight: 700;
+        font-size: 10px;
+    }
+    button{
+        width: 180px;
+        height: 50px;
+        padding: 0px;
+    }
+}
